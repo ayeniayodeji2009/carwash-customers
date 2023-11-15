@@ -16,7 +16,7 @@ interface User {
 const RandomUserPaginationSearch: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);
   const [page, setPage] = useState(1);
-  const [resultsPerPage, setResultsPerPage] = useState(5);
+  const [resultsPerPage, setResultsPerPage] = useState(10);
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
